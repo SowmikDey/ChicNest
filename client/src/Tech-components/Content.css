@@ -1,0 +1,32 @@
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .blog-post {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .blog-title {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .blog-meta {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .blog-content {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .blog-content p {
+    margin-bottom: 10px;
+  }
+  
