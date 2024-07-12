@@ -6,6 +6,7 @@ const Content = () => {
     <div className="content">
       <div className="blog-post">
         <h2 className="blog-title">Understanding React Hooks</h2>
+        <img src="/pexels-cmonphotography-1809644.jpg" alt="React Hooks" />
         <p className="blog-meta">by Jane Doe on July 12, 2024</p>
         <div className="blog-content">
           <p>
@@ -19,6 +20,7 @@ const Content = () => {
 
       <div className="blog-post">
         <h2 className="blog-title">A Guide to JavaScript ES6</h2>
+        <img src="path/to/javascript-es6-image.jpg" alt="JavaScript ES6" />
         <p className="blog-meta">by John Smith on June 20, 2024</p>
         <div className="blog-content">
           <p>
@@ -32,6 +34,7 @@ const Content = () => {
 
       <div className="blog-post">
         <h2 className="blog-title">CSS Grid Layout: A Comprehensive Guide</h2>
+        <img src="path/to/css-grid-layout-image.jpg" alt="CSS Grid Layout" />
         <p className="blog-meta">by Emily Brown on May 15, 2024</p>
         <div className="blog-content">
           <p>
