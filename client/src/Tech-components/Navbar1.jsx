@@ -1,4 +1,3 @@
-// Navbar1.js
 import React, { useState } from 'react';
 import "./Navbar1.css";
 
@@ -22,9 +21,10 @@ const Navbar1 = () => {
         {show && (
           <div className="dropdown">
             <ul>
-              <a href="/tech"><li>TECH</li></a>
-              <a href="/food"><li>FOOD</li></a>
-              <a href="/clothes"><li>CLOTHES</li></a>
+              <a href="/tech"><li>TECH <i class="fa-solid fa-microchip"></i></li></a>
+              <a href="/food"><li>FOOD <i class="fa-solid fa-bowl-food"></i></li></a>
+              <a href="/clothes"><li>CLOTHES <i class="fa-solid fa-shirt"></i></li> </a>
+              <a href=""><li><i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-github"></i></li></a>
             </ul>
           </div>
         )}
@@ -35,10 +35,17 @@ const Navbar1 = () => {
       <div className="nav">
         <h2 className="h">CHICNEST</h2>
         <div className="links">
-          <a href="#tech1">Tech1</a>
-          <a href="#tech2">Tech2</a>
-          <a href="#tech3">Tech3</a>
-          <a href="#tech4">Tech4</a>
+          <div className="scrolling">
+            <a href="#tech1">Laptop</a>
+            <a href="#tech2">Headsets</a>
+            <a href="#tech3">GamiongPcs</a>
+            <a href="#tech4">GraphicCard</a>
+            <a href="#tech1">Phones</a>
+            <a href="#tech2">Tablets</a>
+            <a href="#tech3">TV`s</a>
+            <a href="#tech4">Fridge</a>
+            
+          </div>
         </div>
         <hr />
       </div>

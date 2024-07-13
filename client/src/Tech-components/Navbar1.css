@@ -1,3 +1,13 @@
+@font-face {
+  font-family: myfont;
+  src: url(/allover-modern-demo/ALLOVER\ MODERN\ DEMO.otf);
+}
+
+@font-face {
+  font-family: font;
+  src: url(/agraham/Agraham.otf);
+}
+
 body {
   background-color: rgb(255, 255, 255);
 }
@@ -14,24 +24,29 @@ body {
 }
 
 .n ul li {
-  color: rgb(126, 126, 126);
+  color: rgb(0, 0, 0);
   font-weight: 700;
   padding: 8px 0;
-
+  font-family: font;
 }
-.n ul a{
+
+.n ul a {
   text-decoration: none;
 }
 
 .dropdown {
   position: absolute;
-  background-color: white;
-  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 3;
   padding: 10px;
   height: 400px;
-  width: 200px;
+  width: 300px;
   margin-top: 10px;
 }
 
@@ -41,30 +56,40 @@ body {
   align-items: center;
   text-align: center;
   z-index: 1;
-  margin-top: -70px;
+  margin-top: -50px;
+  font-family: font;
+
 }
 
 hr {
   width: 99%;
 }
 
+.links {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+  white-space: nowrap;
+}
+
+.links .scrolling {
+  display: inline-block;
+  animation: scroll 10s linear infinite;
+}
+
 .links a {
+  display: inline-block;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 243, 205);
+  font-family: myfont;
   padding: 20px 30px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 100;
   transition: 0.1s;
 }
 
-.links a:hover {
-  transition: 0.3s;
-  text-decoration: none;
-  color: black;
-  padding: 20px 10px;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
+
 
 .icon-button {
   background: none;
@@ -86,32 +111,12 @@ hr {
   color: red;
 }
 
-  
-  .nav {
-    display: block;
-    justify-content: center; 
-    align-items: center;
-    text-align: center;
-    z-index: 1;
-    margin-top: -70px;
+/* Infinite scrolling animation */
+/* @keyframes scroll {
+  0% {
+    transform: translateX(100%);
   }
-  hr{
-    width: 99%;
+  100% {
+    transform: translateX(-100%);
   }
-  .links a{
-    text-decoration: none;
-    color: black;
-    padding: 20px 30px;
-    font-size: 1.2rem;
-    font-weight: 100;
-    transition: 0.1s;
-  }
-  .links a:hover{
-    transition: 0.3s;
-    text-decoration: none;
-    color: black;
-    padding: 20px 10px;
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-  
+} */
