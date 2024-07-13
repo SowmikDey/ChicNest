@@ -4,31 +4,25 @@ import "./Navbar1.css";
 const Navbar1 = () => {
   const [show, setShow] = useState(false);
 
-  const showDropdown = () => {
-    setShow(true);
-  };
-
-  const hideDropdown = () => {
-    setShow(false);
+  const toggleDropdown = () => {
+    setShow(prevShow => !prevShow);
   };
 
   return (
     <div>
       <div className="n">
-        <button className="icon-button black" onClick={showDropdown}>
+        <button className="icon-button black" onClick={toggleDropdown}>
           <i className="fa-solid fa-bars"></i>
         </button>
-        {show && (
-          <div className="dropdown">
-            <ul>
-              <a href="/tech"><li>TECH <i class="fa-solid fa-microchip"></i></li></a>
-              <a href="/food"><li>FOOD <i class="fa-solid fa-bowl-food"></i></li></a>
-              <a href="/clothes"><li>CLOTHES <i class="fa-solid fa-shirt"></i></li> </a>
-              <a href=""><li><i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-github"></i></li></a>
-            </ul>
-          </div>
-        )}
-        <button className="icon-button red" onClick={hideDropdown}>
+        <div className={`dropdown ${show ? 'show' : ''}`}>
+          <ul>
+            <a href="/tech"><li>TECH <i className="fa-solid fa-microchip"></i></li></a>
+            <a href="/food"><li>FOOD <i className="fa-solid fa-bowl-food"></i></li></a>
+            <a href="/clothes"><li>CLOTHES <i className="fa-solid fa-shirt"></i></li></a>
+            <a href=""><li><i className="fa-brands fa-instagram"></i> <i className="fa-brands fa-linkedin"></i> <i className="fa-brands fa-github"></i></li></a>
+          </ul>
+        </div>
+        <button className="icon-button red" onClick={toggleDropdown}>
           <i className="fa-solid fa-eject"></i>
         </button>
       </div>
@@ -38,13 +32,12 @@ const Navbar1 = () => {
           <div className="scrolling">
             <a href="#tech1">Laptop</a>
             <a href="#tech2">Headsets</a>
-            <a href="#tech3">GamiongPcs</a>
-            <a href="#tech4">GraphicCard</a>
+            <a href="#tech3">Gaming PCs</a>
+            <a href="#tech4">Graphic Card</a>
             <a href="#tech1">Phones</a>
             <a href="#tech2">Tablets</a>
-            <a href="#tech3">TV`s</a>
+            <a href="#tech3">TVs</a>
             <a href="#tech4">Fridge</a>
-            
           </div>
         </div>
         <hr />
